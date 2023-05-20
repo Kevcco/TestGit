@@ -1,0 +1,135 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+\usepackage{fancyhdr}  % 页眉页脚
+\usepackage{minted}    % 代码高亮
+\usepackage[colorlinks]{hyperref}  % 目录可跳转
+\setlength{\headheight}{15pt}
+
+% 定义页眉页脚
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{Algorithm Template}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+\author{Kevco}   
+\title{Algorithm Template}
+
+\begin{document} 
+\maketitle % 封面
+\newpage % 换页
+\tableofcontents % 目录
+\newpage
+
+\section{DP} % 一级标题
+
+
+\subsection{背包DP} % 二级标题
+
+\subsubsection{01背包} % 三级标题
+\inputminted[breaklines]{c++}{dp/bag/01.cpp}
+\newpage % 换页
+\subsubsection{完全背包} % 三级标题
+\inputminted[breaklines]{c++}{dp/bag/wanQuan.cpp}
+\newpage % 换页
+\subsubsection{多重背包} % 三级标题
+\inputminted[breaklines]{c++}{dp/bag/duoChong1.cpp}
+\inputminted[breaklines]{c++}{dp/bag/duoChong2.cpp}
+\inputminted[breaklines]{c++}{dp/bag/duoChong3.cpp}
+\newpage % 换页
+\subsubsection{分组背包} % 三级标题
+\inputminted[breaklines]{c++}{dp/bag/fenZu.cpp}
+\newpage % 换页
+\subsubsection{树上背包} % 三级标题
+\inputminted[breaklines]{c++}{dp/bag/treeBag1.cpp}
+\newpage % 换页
+\inputminted[breaklines]{c++}{dp/bag/treeBag3.cpp}
+\newpage % 换页
+\inputminted[breaklines]{c++}{dp/bag/treeBag2.cpp}
+\newpage % 换页
+\subsubsection{k优背包} % 三级标题
+\inputminted[breaklines]{c++}{dp/bag/k-great.cpp}
+\newpage % 换页
+\subsubsection{前后缀背包} % 三级标题
+\inputminted[breaklines]{c++}{dp/bag/presuf.cpp}
+\newpage % 换页
+\subsubsection{回退背包} % 三级标题
+\inputminted[breaklines]{c++}{dp/bag/huitui.cpp}
+\newpage % 换页
+\subsubsection{方案计数} % 三级标题
+\inputminted[breaklines]{c++}{dp/bag/count1.cpp}
+\inputminted[breaklines]{c++}{dp/bag/count2.cpp}
+\newpage % 换页
+\subsubsection{输出方案} % 三级标题
+\inputminted[breaklines]{c++}{dp/bag/getMethod.cpp}
+\newpage % 换页
+\subsubsection{DP逆推} % 三级标题
+\inputminted[breaklines]{c++}{dp/bag/inv.cpp}
+\newpage % 换页
+\subsubsection{其他} % 三级标题
+\inputminted[breaklines]{c++}{dp/bag/special.cpp}
+
+\newpage % 换页
+\subsection{线性DP} % 二级标题
+
+\subsubsection{LIS} % 三级标题
+\inputminted[breaklines]{c++}{dp/线性dp/LIS1.cpp}
+\inputminted[breaklines]{c++}{dp/线性dp/LIS2.cpp}
+\newpage % 换页
+\subsubsection{LCS} % 三级标题
+\inputminted[breaklines]{c++}{dp/线性dp/LCS.cpp}
+\newpage % 换页
+\subsubsection{LCIS} % 三级标题
+\inputminted[breaklines]{c++}{dp/线性dp/LCIS.cpp}
+\newpage % 换页
+\subsubsection{回文字符串} % 三级标题
+\inputminted[breaklines]{c++}{dp/线性dp/string.cpp}
+\newpage % 换页
+\subsubsection{方格取数} % 三级标题
+\inputminted[breaklines]{c++}{dp/线性dp/matrix.cpp}
+
+\newpage % 换页
+\subsection{树形DP} % 二级标题
+
+\subsubsection{树的中心} % 三级标题
+\inputminted[breaklines]{c++}{dp/树形/center.cpp}
+\newpage % 换页
+\subsubsection{最大深度和} % 三级标题
+\inputminted[breaklines]{c++}{dp/树形/maxdepth.cpp}
+
+\newpage % 换页
+\subsection{状压DP} % 二级标题
+
+\subsubsection{例l} % 三级标题
+\inputminted[breaklines]{c++}{dp/状压/1.cpp}
+
+\newpage % 换页
+\subsection{数位DP} % 二级标题
+
+\subsubsection{例l} % 三级标题
+\inputminted[breaklines]{c++}{dp/数位/windy.cpp}
+
+\newpage % 换页
+\subsection{概率DP} % 二级标题
+
+\subsubsection{例l} % 三级标题
+\inputminted[breaklines]{c++}{dp/概率dp/1.cpp}
+
+\newpage % 换页
+\subsection{子集和DP} % 二级标题
+
+\subsubsection{枚举子集超集} % 三级标题
+\inputminted[breaklines]{c++}{dp/子集和dp/1.cpp}
+\newpage % 换页
+\subsubsection{子集计数} % 三级标题
+\inputminted[breaklines]{c++}{dp/子集和dp/2.cpp}
+\newpage % 换页
+\subsubsection{其他例子} % 三级标题
+\inputminted[breaklines]{c++}{dp/子集和dp/3.cpp}
+\newpage % 换页
+
+%\newpage
+%\section{Others}
+
+\end{document}
